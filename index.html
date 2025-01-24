@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TravelBloom</div>
+        <nav>
+            <ul>
+                <li><a onclick="navigateTo('home')">Home</a></li>
+                <li><a onclick="navigateTo('about')">About Us</a></li>
+                <li><a onclick="navigateTo('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for destinations...">
+            <button onclick="searchDestinations()">Search</button>
+            <button onclick="clearResults()">Clear</button>
+        </div>
+    </header>
+    <div class="results" id="results-container"></div>
+    <div class="hero">
+        <img src="images/hero.jpeg" alt="Explore Dream Destination">
+        <div class="content">
+            <h1>Explore Dream Destination</h1>
+            <p>Encourage exploration of unfamiliar territories, embracing diverse cultures and landscapes.</p>
+        </div>
+    </div>
+
+    <section id="about" class="hidden">
+        <h1>About Us</h1>
+        <p>We are dedicated to helping travelers explore the best destinations!</p>
+        <div class="team">
+            <div class="member">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="member">
+                <h3>Celina Thomas</h3>
+                <p>Team Lead</p>
+            </div>
+            <div class="member">
+                <h3>Mike Tysen</h3>
+                <p>Delivery Head</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="hidden">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TravelBloom. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
